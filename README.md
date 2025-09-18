@@ -42,12 +42,6 @@ instance, if you create a branch via `git checkout -b my-test-branch` in one of 
       token: ${{ steps.get_installation_token.outputs.token }} # Token you want to authenticate with
 ```
 
-# (Legacy) GitHub Api Commit
-
-> [!NOTE]
-> This section is preserved for historical context. Note that the action now uses the method of committing via
-> `gh api graphql`.
-
 Committing in your workflow can normally be done using git commands or other actions that perform commits for you.
 However, if you are using a GitHub App installation token and your repository requires commit signing, there is no way
 to attach a signing key to your commit, and it must be done through the GitHub API.
