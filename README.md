@@ -26,11 +26,10 @@ instance, if you create a branch via `git checkout -b my-test-branch` in one of 
 ### Example: Using a GitHub App Installation Token
 
 ```yaml
-  - uses: tibdex/github-app-token@v1
+  - uses: actions/create-github-app-token@v2
     id: get_installation_token
     with:
       app_id: ${{ secrets.GITHUB_APP_ID }}
-      installation_id: ${{ secrets.GITHUB_APP_INSTALLATION_ID }}
       private_key: ${{ secrets.GITHUB_APP_PRIVATE_KEY }}
 
   - name: Commit changes
