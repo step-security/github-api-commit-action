@@ -32,7 +32,7 @@ runs:
       env:
         REPO_PRIVATE: ${{ github.event.repository.private }}
       run: |
-        UPSTREAM="step-security/github-api-commit-action"
+        UPSTREAM="grafana/github-api-commit-action"
         ACTION_REPO="${GITHUB_ACTION_REPOSITORY:-}"
         DOCS_URL="https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions"
 
